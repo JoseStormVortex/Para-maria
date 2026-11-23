@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para la niña más bonita</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: white;
+      font-family: "Georgia", "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(140, 167, 255, 0.35) 1px, transparent 2px),
+        radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.6) 1px, transparent 2px),
+        radial-gradient(circle at 40% 70%, rgba(196, 218, 255, 0.5) 1px, transparent 2px),
+        linear-gradient(to bottom, #020817, #09132e 55%, #150b2c);
+      background-size: 90px 90px, 130px 130px, 170px 170px, cover;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::before {
+      background-image:
+        radial-gradient(circle, white 1px, transparent 2px),
+        radial-gradient(circle, #cbdcff 1.5px, transparent 2.5px),
+        radial-gradient(circle, #fff 1px, transparent 2px);
+      background-size: 83px 83px, 137px 137px, 211px 211px;
+      background-position: 10px 20px, 40px 80px, 100px 30px;
+      animation: brillar 4s ease-in-out infinite alternate;
+    }
+
+    body::after {
+      background: radial-gradient(
+        ellipse at center,
+        transparent 30%,
+        rgba(0, 0, 0, 0.45) 100%
+      );
+    }
+
+    @keyframes brillar {
+      from { opacity: 0.55; }
+      to { opacity: 1; }
+    }
+
+    .contenedor {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 90px 24px 120px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 38px;
+      font-size: clamp(2.3rem, 7vw, 5.2rem);
+      line-height: 1.1;
+      font-weight: normal;
+      text-shadow:
+        0 0 12px rgba(201, 218, 255, 0.95),
+        0 0 30px rgba(151, 180, 255, 0.65);
+    }
+
+    .nombre {
+      display: block;
+      margin-bottom: 24px;
+      color: #ffd7ef;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      letter-spacing: 1px;
+    }
+
+    .mensaje {
+      padding: 32px clamp(20px, 5vw, 48px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      background: rgba(5, 12, 35, 0.56);
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        inset 0 0 30px rgba(174, 195, 255, 0.05);
+      backdrop-filter: blur(8px);
+      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+      line-height: 1.85;
+      text-align: center;
+    }
+
+    .corazon {
+      display: block;
+      margin-top: 20px;
+      color: #ffb7dd;
+      font-size: 1.8rem;
+      text-shadow: 0 0 18px rgba(255, 143, 195, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Para la niña más bonita</h1>
+
+    <span class="nombre">Maria de Jesús Juárez García</span>
+
+    <article class="mensaje">
+      Te agradezco mucho por haberme dado la oportunidad de haberme entrado en tu vida
+      y seguir mejorando junto a ti. Sé que te hicieron mucho daño y todo, pero de verdad
+      no me iré, porque tú eres perfecta.
+      <br><br>
+      Siempre sacas muchas situaciones que quiero y las haces y wow, preciosa: me sorprendes
+      cada día. De verdad eres una gran mujer.
+      <br><br>
+      Con el tiempo he estado aprendiendo tanto de ti y de verdad eres una niña brillante.
+      Sabes y creas cosas de verdad, tienes un potencial bien hermoso. O sea, nada de
+      pensamientos malos; sé que te lo he dicho: que te alejes de todos, porque te lo digo
+      porque cuando estás con alguien que te entiende, tu cerebro trabaja de manera relajada
+      y te llegan ideas brillantes. Incluso viste lo que pediste y eso es tu mente.
+      De verdad eres una gran diseñadora.
+      <br><br>
+      Sé que muchas personas te dan el bajón, pero de verdad no te dejes ir por esas personas.
+      Quédate con las que de verdad te apoyan.
+      <br><br>
+      Y si tu familia te hace sentir mal, toma eso y agarra tus fuerzas y di:
+      “Ya tengo que hacer mi vida para salir de este horrible tiempo”.
+      <br><br>
+      Y de verdad te amo mucho, preciosa.
+      <span class="corazon">♥</span>
+    </article>
+  </main>
+</body>
+</html>
